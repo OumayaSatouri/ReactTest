@@ -1,0 +1,60 @@
+<!-- (A) LOAD JS + CSS -->
+<link rel="stylesheet" href="togglelike.css"/>
+<script src="movies.js"></script>
+ 
+<!-- (B) HTML <DIV> TO RENDER LIKE/DISLIKE BUTTON -->
+<div id="demo"></div>
+ 
+<!-- (C) JAVASCRIPT -->
+<script>
+likedis.attach({
+  // (C1) TARGET WRAPPER TO GENERATE LIKE/DISLIKE
+  target : document.getElementById("demo"),
+
+  // (C2) OPTIONAL - LIKE STATUS, DEFAULT 0
+  // -1 FOR DISLIKE, 0 FOR NONE, 1 FOR LIKE
+  like : 1,
+ 
+  // (C3) OPTIONAL - ADDITIONAL DATA
+  data : {
+    id : 999,
+    key : "value"
+  },
+
+  // (C4) OPTIONAL - LIKE & DISLIKE TEXT (OR COUNT)
+  uptxt : "LIKE",
+  downtxt : "NOPE",
+
+  // (C5) OPTIONAL - RUN THIS ON LIKE/DISLIKE CHANGE
+  change : function (liked, button, up, down) {
+    // LIKED : -1 FOR DISLIKE, 0 FOR NOT SET, 1 FOR LIKE
+    // USE AJAX TO SEND THIS TO YOUR SERVER-SIDE
+    console.log(liked);
+ 
+    // SELECTED LIKE/DISLIKE BUTTON ITSELF
+    console.log(button);
+ 
+    // LIKE/DISLIKE TEXT - USE THESE TO UPDATE THE COUNT IF YOU LIKE
+    console.log(up);
+    console.log(down);
+  }
+});
+
+
+
+<div id="demo" class="likedis" data-like="0">
+  <div class="up">
+    <div class="icoup"></div>
+    <div class="txtup"></div>
+  </div>
+ 
+
+  <div class="down">
+    <div class="icodown"></div>
+    <div class="txtdown"></div>
+  </div>
+</div>
+
+
+
+</script>
