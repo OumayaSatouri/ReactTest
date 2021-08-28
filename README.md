@@ -20,6 +20,6 @@ Prennez des initiatives, il y a des points bonus si
 
 /!\ La suppression du comportement asynchrone dans `movies.js` entraînera une annulation du test.
 
---> je  ne connaissais pas React auparavant. J'ai essayé de m'informer un peu dessus ce qui est pas évident avec une soutenance à mener en même temps dans 2jours.
+--> Je  ne connaissais pas React auparavant. J'ai essayé de m'informer un peu dessus ce qui est pas évident avec une soutenance à mener en même temps dans 2jours.
 J'ai essayé de répondre à la première et la deuxième question (sur html) 
-Et je vovus dépose mon rendu pas fini. Je tenais à vous informer que je suis prête à apprendre React en une semaine. Je serai ravie de programmer un entretien avec vous. 
+Et je vous dépose mon rendu pas fini. Je tenais à vous informer que je suis prête à apprendre React en une semaine. Je serai ravie de programmer un entretien avec vous. 
